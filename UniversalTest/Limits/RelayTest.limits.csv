@@ -1,0 +1,10 @@
+Turn Relay 1 ON,10101,1[><]1,V,","
+Pause 1 Seconds,10000,=1,Sec,","
+Turn Relay 1 OFF,10101,0[><]1,V,","
+Turn Relay 2 ON,10101,1[><]2,V,","
+Pause 1 Seconds,10000,=1,Sec,","
+Turn Relay 2 OFF,10101,0[><]2,V,","
+Turn Relay 3 ON,10101,1[><]3,V,","
+Pause 1 Seconds,10000,=1,Sec,","
+Turn Relay 3 OFFffffffffffffffffffffffffffffff,10101,0[><]3,V,","
+EOF

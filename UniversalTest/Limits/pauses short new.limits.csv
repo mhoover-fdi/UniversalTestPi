@@ -1,0 +1,9 @@
+Pause 5 Seconds,10000,=5,Sec,","
+Pause 4 Seconds,10000,=4,Sec,","
+Pause 3 Seconds,10000,=3,Sec,","
+Pause 2 Seconds,10000,=2,Sec,","
+Pause 1 Seconds,10000,=1,Sec,","
+Pause 1 Seconds,10000,1><1,Sec,","
+Pause 1 Seconds,10000,0<>0,Sec,","
+Pause 1 Seconds,10000,3><3,Sec,","
+EOF

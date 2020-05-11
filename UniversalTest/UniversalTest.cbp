@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="UniversalTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/UniversalTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="sudo" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`pkg-config gtk+-3.0 --cflags`" />
+				</Compiler>
+				<Linker>
+					<Add option="`pkg-config gtk+-3.0 --libs` -export-dynamic" />
+					<Add option="-lpthread" />
+					<Add option="-lespeak-ng" />
+					<Add option="-L/lib/arm-linux-gnueabihf/" />
+					<Add option="-lpigpio" />
+					<Add option="-lm" />
+					<Add directory="/usr/lib/arm-linux-gnueabihf/" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/UniversalTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="`pkg-config gtk+-3.0 --cflags`" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`pkg-config gtk+-3.0 --libs` -export-dynamic" />
+					<Add option="-lpthread" />
+					<Add option="-lespeak-ng" />
+					<Add option="-L/lib/arm-linux-gnueabihf/" />
+					<Add option="-lpigpio" />
+					<Add option="-lm" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-g" />
+			<Add option="`pkg-config gtk+-3.0 --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config gtk+-3.0 --libs` -export-dynamic" />
+			<Add option="-lpthread" />
+			<Add option="-lespeak-ng" />
+			<Add option="-L/lib/arm-linux-gnueabihf/" />
+			<Add option="-lpigpio" />
+			<Add option="-lm" />
+		</Linker>
+		<Unit filename="Libs/libLabJackM.so.1.17.0" />
+		<Unit filename="Libs/liblabjackusb.so.2.6.0" />
+		<Unit filename="Sources/BkMeter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sources/Results.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sources/RibStandard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sources/SerialModel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sources/TTspeech.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sources/TestModel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sources/TestStandard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sources/pi_relay_output.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="headers/BkMeter.h" />
+		<Unit filename="headers/Results.h" />
+		<Unit filename="headers/RibStandard.h" />
+		<Unit filename="headers/SerialModel.h" />
+		<Unit filename="headers/TTspeech.h" />
+		<Unit filename="headers/TestModel.h" />
+		<Unit filename="headers/TestStandard.h" />
+		<Unit filename="headers/espeak_ng.h" />
+		<Unit filename="headers/pi_relay_output.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="main_window.glade" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

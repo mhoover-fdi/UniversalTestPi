@@ -1,0 +1,4 @@
+Pause 50 Seconds,10000,=50,Sec,","
+Pause 25 Seconds,10000,=25,Sec,","
+Pause 10 Seconds,10000,=10,Sec,","
+EOF

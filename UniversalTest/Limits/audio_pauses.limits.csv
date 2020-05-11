@@ -1,0 +1,9 @@
+Audio Out ON 100,11001,=100,v,","
+Pause 1 Seconds,10000,=1,Sec,","
+Audio Out OFF,11003,=0,v,","
+Pause 1 Seconds,10000,=1,Sec,","
+Audio Out ON 150,11001,=150,v,","
+Pause 1 Seconds,10000,=1,Sec,","
+Audio Out OFF,11003,=0,v,","
+Pause 1 Seconds,10000,=1,Sec,","
+EOF
